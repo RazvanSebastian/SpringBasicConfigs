@@ -1,0 +1,144 @@
+2017-10-24 17:22:46.732  INFO 7416 --- [main] com.docs.spring.Application              : Starting Application on Frankenstein with PID 7416 (started by Razvan in D:\Work\Spring DOCS\spring)
+2017-10-24 17:22:46.734  INFO 7416 --- [main] com.docs.spring.Application              : No active profile set, falling back to default profiles: default
+2017-10-24 17:22:46.763  INFO 7416 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@657c8ad9: startup date [Tue Oct 24 17:22:46 EEST 2017]; root of context hierarchy
+2017-10-24 17:22:47.626  INFO 7416 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e830ff7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 17:22:47.661  INFO 7416 --- [main] c.d.s.c.PersistenceConfiguration         : ServerConfigurations -> Bean TomcatEmbeddedServletContainerFactory initialized!
+2017-10-24 17:22:47.802  INFO 7416 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-24 17:22:47.809  INFO 7416 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-24 17:22:47.809  INFO 7416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-10-24 17:22:47.878  INFO 7416 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-24 17:22:47.878  INFO 7416 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1117 ms
+2017-10-24 17:22:47.954  INFO 7416 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-24 17:22:47.957  INFO 7416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-24 17:22:47.982  INFO 7416 --- [main] c.d.s.c.PersistenceConfiguration         : PersistenceConfiguration -> Bean DataSource initialized!
+2017-10-24 17:22:47.983  INFO 7416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2017-10-24 17:22:48.097  INFO 7416 --- [main] c.d.s.c.PersistenceConfiguration         : PersistenceConfiguration -> Bean LocalContainerEntityManagerFactoryBean initialized!
+2017-10-24 17:22:48.109  INFO 7416 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-24 17:22:48.118  INFO 7416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-24 17:22:48.163  INFO 7416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-24 17:22:48.164  INFO 7416 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-24 17:22:48.165  INFO 7416 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-24 17:22:48.193  INFO 7416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-24 17:22:48.199  WARN 7416 --- [main] org.hibernate.orm.deprecation            : HHH90000006: Attempted to specify unsupported NamingStrategy via setting [hibernate.ejb.naming_strategy]; NamingStrategy has been removed in favor of the split ImplicitNamingStrategy and PhysicalNamingStrategy; use [hibernate.implicit_naming_strategy] or [hibernate.physical_naming_strategy], respectively, instead.
+2017-10-24 17:22:48.267  INFO 7416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-24 17:22:48.395  INFO 7416 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-24 17:22:48.397  INFO 7416 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1422ac7f
+2017-10-24 17:22:48.480  WARN 7416 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : update .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:22:48.752  INFO 7416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-24 17:22:48.901  INFO 7416 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-24 17:22:48.973  INFO 7416 --- [main] c.d.s.c.PersistenceConfiguration         : MailConfiguration -> Bean JavaMailSender initialized!
+2017-10-24 17:22:49.200  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/foo],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.docs.spring.controller.FooController.create(com.docs.spring.model.FooModel)
+2017-10-24 17:22:49.201  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/foo],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.docs.spring.controller.FooController.getFoo(int,int)
+2017-10-24 17:22:49.201  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goo],methods=[GET]}" onto public java.lang.String com.docs.spring.controller.GooController.getGoo()
+2017-10-24 17:22:49.202  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mail],methods=[POST]}" onto public void com.docs.spring.mail.MailController.sendEmail(com.docs.spring.mail.MailTemplate)
+2017-10-24 17:22:49.203  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-24 17:22:49.205  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-10-24 17:22:49.205  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-10-24 17:22:49.206  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-10-24 17:22:49.208  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-24 17:22:49.208  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-24 17:22:49.261  INFO 7416 --- [main] c.d.s.c.PersistenceConfiguration         : PersistenceConfiguration -> Bean JpaTransactionManager initialized!
+2017-10-24 17:22:49.272  INFO 7416 --- [main] c.d.s.c.PersistenceConfiguration         : SwaggerConfiguration -> Bean Docket initialized!
+2017-10-24 17:22:49.326  INFO 7416 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@657c8ad9: startup date [Tue Oct 24 17:22:46 EEST 2017]; root of context hierarchy
+2017-10-24 17:22:49.355  INFO 7416 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerAdvice
+2017-10-24 17:22:49.615  INFO 7416 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-24 17:22:49.616  INFO 7416 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-24 17:22:49.621  INFO 7416 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-10-24 17:22:49.624  INFO 7416 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-24 17:22:49.624  INFO 7416 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-10-24 17:22:49.633  INFO 7416 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-10-24 17:22:49.644  INFO 7416 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-10-24 17:22:49.772  INFO 7416 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-10-24 17:22:49.776  INFO 7416 --- [main] com.docs.spring.Application              : Started Application in 3.212 seconds (JVM running for 3.651)
+2017-10-24 17:23:12.630  INFO 7416 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-24 17:23:12.630  INFO 7416 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-24 17:23:12.654  INFO 7416 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-10-24 17:23:33.772 ERROR 7416 --- [http-nio-8081-exec-1] c.d.spring.mail.SimpleMessageComponent   : Mail server connection failed; nested exception is javax.mail.MessagingException: Could not connect to SMTP host: smtp.gmail.com, port: 587;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+2017-10-24 17:24:24.320  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-24 17:24:24.320  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@657c8ad9: startup date [Tue Oct 24 17:22:46 EEST 2017]; root of context hierarchy
+2017-10-24 17:24:24.322  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-24 17:24:24.322  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-24 17:24:24.323  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-10-24 17:24:24.324  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-24 17:24:24.324  INFO 7416 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.pool.HikariPool        : HikariCP pool HikariPool-0 is shutting down.
+2017-10-24 17:24:30.481  WARN 2356 --- [main] org.hibernate.orm.deprecation            : HHH90000006: Attempted to specify unsupported NamingStrategy via setting [hibernate.ejb.naming_strategy]; NamingStrategy has been removed in favor of the split ImplicitNamingStrategy and PhysicalNamingStrategy; use [hibernate.implicit_naming_strategy] or [hibernate.physical_naming_strategy], respectively, instead.
+2017-10-24 17:24:30.745  WARN 2356 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : update .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:25:03.794  WARN 7180 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : update .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:25:33.539  WARN 15176 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : update .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:26:46.459  WARN 1668 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : validate .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:27:05.459  WARN 6508 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : update .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:28:54.346  INFO 8140 --- [main] com.docs.spring.Application              : Starting Application on Frankenstein with PID 8140 (started by Razvan in D:\Work\Spring DOCS\spring)
+2017-10-24 17:28:54.348  INFO 8140 --- [main] com.docs.spring.Application              : No active profile set, falling back to default profiles: default
+2017-10-24 17:28:54.378  INFO 8140 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@657c8ad9: startup date [Tue Oct 24 17:28:54 EEST 2017]; root of context hierarchy
+2017-10-24 17:28:55.225  INFO 8140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e830ff7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 17:28:55.259  INFO 8140 --- [main] c.d.s.c.PersistenceConfiguration         : ServerConfigurations -> Bean TomcatEmbeddedServletContainerFactory initialized!
+2017-10-24 17:28:55.393  INFO 8140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-24 17:28:55.399  INFO 8140 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-24 17:28:55.400  INFO 8140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-10-24 17:28:55.471  INFO 8140 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-24 17:28:55.471  INFO 8140 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1095 ms
+2017-10-24 17:28:55.546  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-24 17:28:55.548  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-24 17:28:55.572  INFO 8140 --- [main] c.d.s.c.PersistenceConfiguration         : PersistenceConfiguration -> Bean DataSource initialized!
+2017-10-24 17:28:55.573  INFO 8140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2017-10-24 17:28:55.688  INFO 8140 --- [main] c.d.s.c.PersistenceConfiguration         : PersistenceConfiguration -> Bean LocalContainerEntityManagerFactoryBean initialized!
+2017-10-24 17:28:55.698  INFO 8140 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-24 17:28:55.707  INFO 8140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-24 17:28:55.752  INFO 8140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-24 17:28:55.753  INFO 8140 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-24 17:28:55.754  INFO 8140 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-24 17:28:55.780  INFO 8140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-24 17:28:55.849  INFO 8140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-24 17:28:55.969  INFO 8140 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-24 17:28:55.970  INFO 8140 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@49faf066
+2017-10-24 17:28:56.050  WARN 8140 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : update .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-24 17:28:56.296  INFO 8140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-24 17:28:56.438  INFO 8140 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-10-24 17:28:56.507  INFO 8140 --- [main] c.d.s.c.PersistenceConfiguration         : MailConfiguration -> Bean JavaMailSender initialized!
+2017-10-24 17:28:56.733  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/foo],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.docs.spring.controller.FooController.create(com.docs.spring.model.FooModel)
+2017-10-24 17:28:56.733  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/foo],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.docs.spring.controller.FooController.getFoo(int,int)
+2017-10-24 17:28:56.734  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goo],methods=[GET]}" onto public java.lang.String com.docs.spring.controller.GooController.getGoo()
+2017-10-24 17:28:56.734  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mail],methods=[POST]}" onto public void com.docs.spring.mail.MailController.sendEmail(com.docs.spring.mail.MailTemplate)
+2017-10-24 17:28:56.735  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-24 17:28:56.737  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-10-24 17:28:56.738  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-10-24 17:28:56.738  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-10-24 17:28:56.740  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-24 17:28:56.741  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-24 17:28:56.792  INFO 8140 --- [main] c.d.s.c.PersistenceConfiguration         : PersistenceConfiguration -> Bean JpaTransactionManager initialized!
+2017-10-24 17:28:56.803  INFO 8140 --- [main] c.d.s.c.PersistenceConfiguration         : SwaggerConfiguration -> Bean Docket initialized!
+2017-10-24 17:28:56.856  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@657c8ad9: startup date [Tue Oct 24 17:28:54 EEST 2017]; root of context hierarchy
+2017-10-24 17:28:56.885  INFO 8140 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerAdvice
+2017-10-24 17:28:57.136  INFO 8140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-24 17:28:57.137  INFO 8140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-24 17:28:57.142  INFO 8140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-10-24 17:28:57.144  INFO 8140 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-24 17:28:57.145  INFO 8140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-10-24 17:28:57.155  INFO 8140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-10-24 17:28:57.165  INFO 8140 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-10-24 17:28:57.286  INFO 8140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-10-24 17:28:57.290  INFO 8140 --- [main] com.docs.spring.Application              : Started Application in 3.113 seconds (JVM running for 3.553)
+2017-10-24 17:29:00.455  INFO 8140 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-24 17:29:00.456  INFO 8140 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-24 17:29:00.468  INFO 8140 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2017-10-24 17:29:21.590 ERROR 8140 --- [http-nio-8081-exec-1] c.d.spring.mail.SimpleMessageComponent   : Mail server connection failed; nested exception is javax.mail.MessagingException: Could not connect to SMTP host: smtp.gmail.com, port: 587;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+2017-10-24 17:29:25.940  INFO 8140 --- [http-nio-8081-exec-3] c.docs.spring.controller.FooController   : Into FooController -> getFoo() -> Response OK
+2017-10-24 17:29:30.424  INFO 8140 --- [http-nio-8081-exec-4] c.docs.spring.controller.FooController   : Into FooController -> getFoo() -> Response OK
+2017-10-24 17:29:34.388  WARN 8140 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/trace] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-24 17:29:46.518  WARN 8140 --- [http-nio-8081-exec-10] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/trace] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-24 17:30:17.039  WARN 8140 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/trace] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-24 18:10:48.603  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-24 18:10:48.603  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@657c8ad9: startup date [Tue Oct 24 17:28:54 EEST 2017]; root of context hierarchy
+2017-10-24 18:10:48.604  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-24 18:10:48.605  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-24 18:10:48.605  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-10-24 18:10:48.606  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-24 18:10:48.607  INFO 8140 --- [RMI TCP Connection(51)-127.0.0.1] com.zaxxer.hikari.pool.HikariPool        : HikariCP pool HikariPool-0 is shutting down.
